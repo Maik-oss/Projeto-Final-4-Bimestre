@@ -1,0 +1,244 @@
+body{
+    font-style: italic;
+    text-align: justify; 
+    font-family: Arial, Helvetica, sans-serif; 
+    background-color: #f4f4f4;}
+
+ul{
+    text-align: justify;
+    a{text-decoration: none; color: #f4f4f4;}
+    list-style: none;
+ }
+
+h1{
+    color: aliceblue;
+    text-align: center;
+}
+.iframe-container{
+    text-align: center;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 50px;
+    width: 730px ;
+    background-color: #333;
+    color: #f4f4f4;
+    border-radius: 20px;
+}
+
+main {
+    flex: 1;
+    background-color:#333;
+    padding: 20px;
+    margin-right: 20px;
+    color:#f4f4f4;
+    border-radius: 20px;
+    bottom:40px;
+}
+
+.sidebar {
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 50px;
+    border-radius: 20px;
+    background-color: #333;
+    color: #f4f4f4;
+    position: absolute;
+    right:30px;
+    top: 350px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+}
+
+.lista{
+    color: #fff;
+    flex-direction: column-reverse;
+
+    
+}
+ol{
+    color: #fff;
+    text-align: left;
+}
+.curiosidade{
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 50px;
+    border-radius: 20px;
+    background-color: #333;
+    color: #f4f4f4;
+    height: 1000px;
+    position: absolute;
+    right: 25px;
+    top: 450px;
+
+}
+.menu {
+    background-color: #333;
+    color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    width: 250px;
+    position: absolute;
+    top: 20px;
+}
+.fotos{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap; 
+
+}
+.fotos img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 5px;
+}
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    main {
+        margin-right: 0;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .menu {
+        width: 100%;
+        left: 0;
+        transform: none;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    .curiosidade {
+        right: 10px;
+        top: 20px;
+        position: relative; /* Para não sobrepor outros conteúdos */
+    }
+
+    .fotos img {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px; /* Ajusta o título para telas menores */
+    }
+
+    nav a {
+        margin: 5px; /* Diminui a margem nos links do menu */
+    }
+
+    .container {
+        flex-direction: column; /* Empilha os elementos verticalmente */
+        margin: 0;
+    }
+
+    main {
+        margin: 0;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .fotos {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .menu {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .curiosidade {
+        width: 90%;
+        right: 0;
+        top: 10px;
+        position: relative;
+    }
+
+    .fotos img {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px; /* Tamanho de fonte menor para telas muito pequenas */
+    }
+
+    nav a {
+        margin: 3px; /* Diminui ainda mais o espaço entre os links no menu */
+    }
+
+    .container {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    main {
+        margin: 0;
+        padding: 15px;
+    }
+
+    .sidebar {
+        width: 300px;
+        margin-top: 20px;
+    }
+
+    .menu {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .curiosidade {
+        width: 100%;
+        top: 10px;
+        right: 0;
+        position: relative;
+    }
+
+    .fotos img {
+        width: 80px;
+        height: 80px;
+        margin: 5px;
+    }
+}
